@@ -7,4 +7,5 @@ app.get("/", function (req, res) {
   res.render("time", { featuredVoices, latestStories }); //for render the page with properties
 });
 app.get("/getTimeStories", (req, res) => res.send(latestStories));
+console.log("http://localhost:8080/");
 app.listen(8080);
