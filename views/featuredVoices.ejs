@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="col-9" id="featuredVoices" style="padding-left: 200px">
+      <h1 style="padding-bottom: 20px">FEATURED VOICES</h1>
+      <div style="display: flex; flex-wrap: wrap">
+        <% for(var i=0; i < featuredVoices.length; i++) { %>
+        <div style="width: 50%">
+          <h3 class="text-danger"><%= featuredVoices[i].name %></h3>
+          <h4><%= featuredVoices[i].des %></h4>
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>

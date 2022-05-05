@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div
+      class="col col-3"
+      id="latestStories"
+      style="background-color: yellow; height: 100vh"
+    >
+      <p style="text-align: center; font-weight: bold">Latest Stories</p>
+      <div>
+        <% for(var i=0; i < latestStories.length; i++) { %>
+        <div style="padding: 5%">
+          <a href="<%= latestStories[i].link %>" style="color: black"
+            ><%= latestStories[i].title %></a
+          >
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>
