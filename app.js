@@ -4,6 +4,6 @@ const latestStories = require("./component/latestStories");
 const featuredVoices = require("./component/featuredVoices");
 app.set("view engine", "ejs");
 app.get("/", function (req, res) {
-  res.render("time", { featuredVoices, latestStories });
+  res.render("time", { featuredVoices, latestStories }); //for render the page with properties
 });
 app.listen(8080);
